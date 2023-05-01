@@ -8,12 +8,23 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
         title: const Text('Cinemapedia'),
         centerTitle: true,
       ),
-      body: const Center(
-        child: Text('Cinemapedia'),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Center(
+            child: Text(
+              "Lets Learn Together \nalso want to contribute in movie app using bloc\n",
+              style:
+                  TextStyle(fontSize: 16, color: Colors.red.withOpacity(0.6)),
+            ),
+          ),
+        ],
       ),
     );
   }
